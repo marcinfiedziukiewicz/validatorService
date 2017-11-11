@@ -18,7 +18,7 @@ public class ResponseFactory {
      * Method return Response object base on error list provided as argument.
      *
      * @param errors Error list
-     * @return Resposne object with Valid|Invalid state.
+     * @return Response object with Valid|Invalid state.
      */
     public Response getResponse(List errors) {
         if (errors == null || errors.isEmpty()) {

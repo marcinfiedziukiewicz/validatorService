@@ -37,12 +37,6 @@ public class ValidationHandler {
      *
      * @return Return Response object with information if input is valid|invalid.
      */
-/*    @RequestMapping(value = "/validate1", method = POST, produces = APPLICATION_JSON_VALUE)
-    @ResponseBody
-    public Response validate1(@RequestBody ValueRates valueRates) {
-        return responseFactory.getResponse(validationService.validateFields(valueRates, new BeanPropertyBindingResult(valueRates, "valueRates")));
-    }*/
-
     @RequestMapping(value = "/validate", method = POST, produces = APPLICATION_JSON_VALUE)
     @ResponseBody
     public Response validate(@Valid @RequestBody ValueTrade valueTrade) {
